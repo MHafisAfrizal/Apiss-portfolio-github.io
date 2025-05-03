@@ -1,0 +1,281 @@
+* { padding:0; margin:0; outline:0; }
+body {
+	background:#262521 url(images/body.jpg);
+	font-family: "Trebuchet MS", sans-serif;
+	font-size:13px;
+	line-height:19px;
+	color:#fff;
+}
+body, html { height:100%; min-height:100%; }
+
+a { color:#e7582f; text-decoration: underline; cursor:pointer;}
+a:hover { color:#f68f25; text-decoration: none; }
+a img { border:0; }
+
+.notext { font-size:0; line-height:0; background-repeat:no-repeat; background-position:0 0; text-indent: -4000px;}
+
+.left { float:left; display:inline; }
+.right { float:right; display:inline; }
+
+input, textarea, select { font-family: "Trebuchet MS", sans-serif; font-size:13px; }
+textarea{ overflow:auto; }
+
+label { font-size:15px; font-weight: bold; color:#f68f25;}
+
+.cl { font-size:0; line-height:0; clear:both; height:0; display:block; }
+
+#wrapper { min-height:100%; position:relative; }
+
+
+h2 { color:#f68f25; font-size:28px; line-height:34px;}
+
+.glow-title {
+    color: #fff; /* Warna teks putih biar kontras */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc; /* Efek glow neon */
+    transition: all 0.3s ease; /* Animasi halus */
+    display: inline-block;
+  }
+  .glow-title:hover {
+    transform: scale(1.1); /* Besarin sedikit pas di-hover */
+    text-shadow: 0 0 15px #ff00ff, 0 0 25px #ff00ff, 0 0 35px #ff00ff; /* Glow berubah warna */
+    cursor: pointer; /* Kayak tombol */
+  }
+  .glow-title.active {
+    animation: bounce 0.5s; /* Efek lompat pas diklik */
+  }
+  @keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+
+  .tech-title {
+    color: #00e6e6; /* Warna cyan modern */
+    font-family: 'Arial', sans-serif; /* Font simpel tapi clean */
+    text-shadow: 0 0 8px #00e6e6, 0 0 15px #ff00ff; /* Glow futuristik */
+    animation: pulse 2s infinite; /* Denyut konstan */
+    transition: all 0.3s ease; /* Transisi halus */
+    padding: 10px;
+    display: inline-block;
+    background: linear-gradient(90deg, #1a1a1a, #333); /* Background gelap modern */
+    border-radius: 8px; /* Sudut melengkung */
+  }
+  .tech-title:hover {
+    transform: translateY(-5px); /* Naik pas di-hover */
+    text-shadow: 0 0 12px #ff00ff, 0 0 20px #00e6e6; /* Glow lebih intens */
+    cursor: pointer;
+  }
+  .tech-title:active {
+    transform: scale(0.95); /* Kecilkan pas diklik */
+  }
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+  .spark {
+    display: inline-block;
+    animation: spark 1.5s infinite alternate; /* Efek kilatan kecil */
+  }
+  @keyframes spark {
+    0% { opacity: 0.5; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.2); }
+  }
+
+.shell { width:980px; margin:0 auto;}
+
+#header { background:url(images/header.jpg) no-repeat center 0; position:relative; z-index:2;}
+#header .shell { height:410px; position:relative; z-index:2;}
+
+#header-bg { background:url(images/header-left.jpg) repeat-x 0 0;}
+#header-right { background:url(images/header-right.jpg) repeat-x 0 0; position:absolute; top:0; right:0; width:50%; height:410px; z-index:1;}
+
+h1#logo { padding-top:100px; width:340px; height:50px; font-size:0; line-height:0; }
+h1#logo a{ text-indent: -4000px; height:43px; display:block; background:url(images/logo.png)}
+
+.site-info { 
+	color: #00ffcc; /* Warna cyan ala tech/game */
+    font-family: 'Courier New', monospace; /* Font terminal */
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #ff00ff; /* Glow futuristik */
+    white-space: pre-wrap; /* Biar teks rapi */
+    display: inline-block;
+    background: #1a1a1a; /* Background gelap */
+    padding: 10px;
+    border: 2px solid #00ffcc; /* Border ala game */
+    border-radius: 5px;
+}
+
+.site-info::after {
+    content: '|'; /* Kursor berkedip */
+    animation: blink 0.7s infinite;
+    color: #ff00ff; /* Warna kursor pink */
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+a.latest-project-button { width:198px; height:57px; background:url(images/latest-project-button.png); position:absolute; top:250px; left:410px;}
+
+#navigation { position:absolute; top:-20px; left:38px; width:471px; height:198px; z-index:2;}
+#navigation-bg { width:471px; height:198px; background:url(images/nav.png); }
+#navigation ul{ list-style-position: none; font-size:14px; font-weight: bold; text-transform: uppercase; padding:107px 0 0 38px;}
+#navigation ul li{ display:inline; float:left; height:36px; line-height:36px; background:url(images/nav-bul.gif) no-repeat right 0; padding-right:40px; margin-right:5px; }
+#navigation ul li.last{ background:transparent; padding-right:0; margin-right:0;}
+#navigation ul li a{ color:#9f9279; text-decoration: none; position:relative; }
+#navigation ul li a:hover,
+#navigation ul li a.active{ color:#fff;}
+
+#top { height:74px; background:url(images/top.png) repeat-x 0 0; position:absolute; top:0; left:0; width:100%; z-index:3;}
+
+
+#content { background:url(images/content.gif) repeat-x center 0; min-height:700px; position:relative; top:-3px; z-index:4;}
+#content .shell{ position:relative; padding:110px 0 90px 0; z-index:1;}
+
+.post { background:url(images/line.gif) no-repeat center bottom; padding-bottom:140px; margin-bottom:10px;}
+
+#content p,
+#content h2{ padding-bottom:15px;}
+
+#circle { position:absolute; top:-23px; left:430px; width:201px; height:160px; background:url(images/circle.png);}
+
+#footer { position:absolute; bottom:0; left:0; height:118px; width:100%; background:url(images/bottom.png) repeat-x 0 0; z-index:150;}
+
+.portfolio { width:1004px; position:relative; margin-right:-24px; }
+.portfolio ul{ list-style-type: none; }
+.portfolio a{ float:left; width:298px; height:173px; font-size:0; line-height:0; background:url(images/portfolio-link.jpg); padding:12px 0 0 12px; margin:0 24px 30px 0;}
+
+
+.contact .left { width:460px; }
+.contact .right{ width:390px; padding-top:46px; }
+.contact label { display:block; padding-bottom:5px; }
+.contact label span{ color:#938f7b; font-weight: normal; }
+
+.contact .field input,
+.contact .textarea-field textarea { color:#fff; font-weight: bold; border:0; background:transparent; width:100%; }
+
+.field { width:362px; height:34px; background:url(images/field.jpg); display:block; padding:14px 14px 0 14px; margin-bottom:15px;}
+
+.textarea-field { width:362px; height:166px; background:url(images/textarea.jpg); display:block; padding:14px 14px 0 14px; margin-bottom:15px;}
+.textarea-field textarea{  height:156px; }
+
+.submit {
+    background: linear-gradient(45deg, #ff00ff, #00ffcc); /* Gradient ala game */
+    color: #fff; /* Teks putih */
+    font-family: 'Courier New', monospace; /* Font terminal */
+    font-size: 16px;
+    padding: 10px 20px; /* Besar tombol */
+    border: 2px solid #00ffcc; /* Border cyan */
+    border-radius: 5px; /* Sudut melengkung */
+    text-shadow: 0 0 5px #fff; /* Glow teks */
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffcc; /* Glow luar */
+    cursor: pointer; /* Tangan pas hover */
+    transition: all 0.3s ease; /* Animasi halus */
+  }
+  .submit:hover {
+    transform: scale(1.1); /* Besar sedikit pas hover */
+    box-shadow: 0 0 15px #ff00ff, 0 0 25px #00ffcc; /* Glow lebih kuat */
+  }
+  .submit:active {
+    transform: scale(0.95); /* Kecilkan pas klik */
+    box-shadow: 0 0 5px #ff00ff; /* Glow redup pas ditekan */
+  }
+  /* Efek klik tambahan (opsional via JS) */
+  .submit.clicked {
+    animation: pulse 0.2s; /* Denyut pas diklik */
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+
+.welcome .left { width:460px;}
+.twitter { width:433px; height:257px; background:url(images/twitter-bg.gif); margin:48px 0 0 0; position:relative; }
+.twitter ul{ padding:25px; list-style-type: none;}
+.twitter ul li{ margin-bottom:10px; line-height:17px; }
+.twitter ul li strong{ color:#caa45c; }
+
+.yellow { color:#caa45c; }
+
+.game-button {
+	padding: 5px 15px; /* Dikurangi lagi dari 8px 20px */
+	font-size: 12px;  /* Dikurangi dari 14px */
+	font-family: 'Press Start 2P', cursive;
+	background: linear-gradient(45deg, #ff0066, #ff33cc);
+	color: #ffffff;
+	border: 2px solid #cc0052; /* Dikurangi dari 3px */
+	border-radius: 6px; /* Dikurangi dari 8px */
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(255, 0, 102, 0.5); /* Shadow lebih kecil */
+	transition: all 0.2s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.game-button:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 15px rgba(255, 0, 102, 0.8);
+	background: linear-gradient(45deg, #ff33cc, #ff0066);
+}
+
+.game-button:active {
+	transform: scale(0.95);
+	box-shadow: 0 0 5px rgba(255, 0, 102, 0.4);
+}
+
+.game-button::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	transition: width 0.3s ease, height 0.3s ease;
+}
+
+.game-button:active::after {
+	width: 100px; /* Dikurangi lagi dari 150px */
+	height: 100px;
+	opacity: 0;
+}
+
+.twitter-link { color:#fda73b; font-size:12px; font-weight: bold; text-transform: uppercase; background:url(images/twitter.gif) no-repeat 0 0; padding-left:45px; height:30px; line-height:30px; position:absolute; top:203px; right:30px; text-decoration: none;}
+
+.copy{ color:#999; padding-top:100px;}
+.copy a{ color:#aaa; }
+
+.jcarousel-clip { overflow:hidden; position:relative; }
+
+.jcarousel-prev,
+.jcarousel-next { font-size:0; line-height:0; cursor:pointer; text-indent: -4000px; position:absolute; }
+
+.portfolio .jcarousel-clip { width:1004px; height:430px; }
+.portfolio .jcarousel-clip ul{ position:relative; }
+.portfolio .jcarousel-clip ul li{ float:left; display:inline; width:1004px; height:400px;}
+
+.portfolio .jcarousel-prev,
+.portfolio .jcarousel-next { width:42px; height:42px; top:420px; }
+
+.portfolio .jcarousel-next { background:url(images/next.gif); right:24px; }
+.portfolio .jcarousel-prev { background:url(images/prev.gif); left:0; }
+
+
+
+#latest-projects { width:393px; height:208px; position:absolute; top:150px; left:305px; z-index:3; visibility: hidden;}
+#latest-projects-bg { width:373px; height:194px; background:url(images/latest-project-bg.png); padding:14px 0 0 20px;}
+#latest-projects ul{ list-style-type: none; font-size:0; line-height:0; width:354px; height:183px; overflow:hidden; position:relative; }
+#latest-projects ul li{ float:left; display:inline; width:354px; height:183px; }
+
+#latest-projects .jcarousel-clip { width:354px; height:430px; }
+
+#latest-projects .jcarousel-prev,
+#latest-projects .jcarousel-next { width:41px; height:40px; top:90px; z-index:3;}
+
+#latest-projects .jcarousel-next { background:url(images/next-small.png); right:-5px; }
+#latest-projects .jcarousel-prev { background:url(images/prev-small.png); left:-5px; }
+
+.close { width:41px; height:41px; background:url(images/close-small.png); position:absolute; top:-5px; right:-5px; z-index:2;}
+
+#navigation-handler { position:absolute; width:560px; height:200px; top:0; left:480px; z-index:1;}

@@ -1,0 +1,35 @@
+body, html { overflow-x:hidden; }
+#wrapper { }
+
+h1#logo a
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/logo.png', sizingMethod='image'); }
+
+a.latest-project-button 
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/latest-project-button.png', sizingMethod='image'); }
+
+#navigation-bg
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/nav.png', sizingMethod='image'); }
+
+#top 
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/top.png', sizingMethod='image'); }
+
+#circle 
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/circle.png', sizingMethod='image'); }
+
+#footer 
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/bottom.png', sizingMethod='image'); }
+
+#latest-projects-bg 
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/latest-project-bg.png', sizingMethod='image'); }
+
+#latest-projects .jcarousel-next 
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/next-small.png', sizingMethod='image'); }
+
+#latest-projects .jcarousel-prev 
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/prev-small.png', sizingMethod='image'); }
+
+.close 
+{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/close-small.png', sizingMethod='image'); }
+
+
+#content { height:700px; }

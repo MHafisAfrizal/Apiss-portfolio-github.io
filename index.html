@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Portfolio</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.jcarousel.js" type="text/javascript"></script>
+<script src="js/jquery.scrollTo-min.js" type="text/javascript"></script>
+<script src="js/jquery-func.js" type="text/javascript"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const text = "Hi, I’m M. Hafis Afrizal! 🚀\nAspiring IT Professional | Web Developer | Network Enthusiast\nBringing ideas to life with technology and innovation. Let’s build something great together!";
+    const typingText = document.getElementById("typing-text");
+    let index = 0;
+    let isTyping = true;
+
+    function type() {
+      if (isTyping) {
+        if (index < text.length) {
+          typingText.textContent += text[index];
+          index++;
+          setTimeout(type, 50); // Kecepatan ketik
+        } else {
+          setTimeout(() => {
+            isTyping = false;
+            erase();
+          }, 2000); // Tunggu 2 detik sebelum hapus
+        }
+      }
+    }
+
+    function erase() {
+      if (!isTyping) {
+        if (typingText.textContent.length > 0) {
+          typingText.textContent = typingText.textContent.slice(0, -1);
+          setTimeout(erase, 30); // Kecepatan hapus
+        } else {
+          setTimeout(() => {
+            isTyping = true;
+            index = 0;
+            type();
+          }, 1000); // Tunggu 1 detik sebelum ulang
+        }
+      }
+    }
+
+    typingText.textContent = ""; // Mulai kosong
+    type(); // Mulai animasi
+  });
+</script>
+
+<!--[if lte IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+</head>
+<body>
+<!-- Wrapper -->
+
+
+<div id="wrapper">
+  <div id="top">&nbsp;</div>
+  <!-- Header -->
+  <div id="header">
+    <div class="shell">
+      <!-- Logo and Site info -->
+      <h1 id="logo"><a href=>Portfolio Site</a></h1>
+      <span class="site-info" id="typing-text">Hi, I’m M. Hafis Afrizal! 🚀
+        Aspiring IT Professional | Web Developer | Network Enthusiast"
+        Bringing ideas to life with technology and innovation. Let’s build something great together!</span>
+      <!-- End Logo and Site info -->
+      <!-- Navigation  -->
+      <div id="navigation-handler">
+        <div id="navigation">
+          <div id="navigation-bg">
+            <ul>
+              <li><a href="#welcome">Welcome</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li class="last"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Navigation  -->
+      <!-- Latest Project -->
+      <a href="#" class="latest-project-button notext">Latest Project</a>
+      <div id="latest-projects"> <a href="#" class="close notext">Close</a>
+        <div id="latest-projects-bg">
+          <ul>
+            <li><a href="http://all-free-download.com/free-website-templates/"><img src="css/images/portfolio1-big.jpg" alt="" /></a></li>
+            <li><a href="http://all-free-download.com/free-website-templates/"><img src="css/images/portfolio1-big.jpg" alt="" /></a></li>
+            <li><a href="http://all-free-download.com/free-website-templates/"><img src="css/images/portfolio1-big.jpg" alt="" /></a></li>
+            <li><a href="http://all-free-download.com/free-website-templates/"><img src="css/images/portfolio1-big.jpg" alt="" /></a></li>
+            <li><a href="http://all-free-download.com/free-website-templates/"><img src="css/images/portfolio1-big.jpg" alt="" /></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ENd Latest Project -->
+    </div>
+  </div>
+  <!-- End Header -->
+  <!-- Content -->
+  <div id="content">
+    <div class="shell">
+      <div class="post welcome" id="welcome">
+        <div class="cl">&nbsp;</div>
+        <div class="left">
+          <h2 class="glow-title" onclick="this.classList.toggle('active')">WELCOME TO MY PORTFOLIO 🎮</h2>
+          <p>Hello! I am M. Hafis Afrizal, a Computer Engineering student at Batam Institute of Technology with a passion for software development, computer networking, and cybersecurity. I have experience in front-end web development, copywriting, and graphic design. Currently, I am also enhancing my skills in digital marketing and video marketing.</p>
+          <p>Additionally, I am interested in developing technological innovations that can be applied globally with a focus on sustainability. One of the major projects I aim to realize is waste management, specifically plastic recycling, to create beneficial solutions for society.</p>
+          <p>My goal is to become a professional in the IT field, particularly at Lintasarta, by mastering various areas such as AI, software engineering, cybersecurity, and digital marketing.</p>
+        </div>
+        <div class="right twitter">
+          <ul>
+            <li> <strong>Andre Julian:</strong> Very informative and useful! Thanks for sharing. <span class="yellow"> - 3 days ago</span> </li>
+            <li> <strong>Fitra Firmansyah:</strong> The explanation is clear and easy to understand. Great job! <span class="yellow"> - 3 days ago</span> </li>
+            <li> <strong>Joselu Hutabarat:</strong> Such a helpful article! Wishing you success! <span class="yellow"> - 3 days ago</span> </li>
+          </ul>
+          <a href="#" class="twitter-link">FOLLOW ME ON TWITTER</a> </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+      <div class="post" id="about">
+        <h2 class="glow-title" onclick="this.classList.toggle('active')">ABOUT ME 🎮🚀</h2>
+        <p>Hey there! I’m M. Hafis Afrizal 🕹️💡—a tech enthusiast, gamer at heart, and a Computer Engineering student at Batam Institute of Technology 🏫💻. My passion lies in web development, computer networking, and cybersecurity 🔐🌍. I’ve honed my skills in IT infrastructure, Linux systems, and cloud technologies ☁️🐧. I specialize in front-end development, networking, and digital marketing, always striving to create innovative and high-performance digital solutions 📈⚡. Whether it’s coding, designing, or optimizing networks, I’m always up for a challenge 🎯🔥.</p>
+        <p>Beyond the digital world, I’m on a mission to blend technology with sustainability 🌱🔧. One of my dream projects is to develop an innovative plastic waste recycling system ♻️🤖 that turns trash into something valuable! I believe tech isn’t just about lines of code—it’s about creating real-world impact 💡🌎. My ultimate goal? Becoming an IT professional at Lintasarta 🚀🏢 while mastering AI, cybersecurity, software engineering, and digital marketing 🎯🤖. Let’s team up, build something epic, and level up the world together! 💥🎮✨</p>
+      </div>
+      <div class="post" id="portfolio">
+        <h2 class="glow-title" onclick="this.classList.toggle('active')">PORTFOLIO 🎮🚀</h2>
+        <div class="portfolio">
+          <ul>
+            <li> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> </li>
+
+            <li> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#/"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> </li>
+
+            <li> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> </li>
+
+            <li> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> <a href=""><img src="css/images/portfolio1.jpg" alt="" /></a> <a href=""><img src="css/images/portfolio1.jpg" alt="" /></a> <a href="#"><img src="css/images/portfolio1.jpg" alt="" /></a> </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <div class="cl">&nbsp;</div>
+        <div class="left">
+          <h2 class="glow-title" onclick="this.classList.toggle('active')">🔹 CONTACT ME – Your Next Quest Starts Here! 🔹</h2>
+          <h3 class="tech-title" onclick="this.style.color = this.style.color === 'rgb(255, 51, 153)' ? '#00e6e6' : '#ff3399'">
+            <span class="spark">🚀</span> Looking for a tech-savvy ally to collaborate with? Need a creative mind for your next big idea? Or just want to chat about tech, networking, and innovation? You’re in the right place! <span class="spark">🎯</span>
+          </h3> <br><br>
+          <p><strong>💾 Mission Briefing:</strong>
+            In this ever-evolving digital world, connections are everything! Whether it’s about front-end development, networking, cybersecurity, or building groundbreaking projects, I’m always up for a challenge. Let’s share ideas, solve problems, and create something amazing together! </p>
+            <h3 class="tech-title" onclick="this.style.color = this.style.color === 'rgb(255, 51, 153)' ? '#00e6e6' : '#ff3399'">
+              <span class="spark">🚀</span> 🎮 What’s Next? <span class="spark">🎯</span></h3> <br><br>
+          <p>Press START and let’s embark on a new adventure in the world of tech! Whether it’s coding, networking, or brainstorming the next big thing, I’m always ready. Let’s build something epic together! 🚀 </p>
+          <br>
+
+
+        </div>
+        <div class="right">
+          <form action="#" method="post">
+            <label>Your Name <span>(Required)</span></label>
+            <span class="field">
+            <input type="text" name="" value="" />
+            </span>
+            <label>Your E-Mail <span>(Required)</span></label>
+            <span class="field">
+            <input type="text" name="" value="" />
+            </span>
+            <label>Message <span>(Required)</span></label>
+            <span class="textarea-field">
+            <textarea name="" rows="6" cols="10"></textarea>
+            </span>
+            <input type="submit" class="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <!-- End Content -->
+  <div id="footer">
+    <div class="shell">&nbsp;</div>
+  </div>
+</div>
+<!-- End Wrapper -->
+<audio id="backgroundMusic" loop>
+  <source src="gamemusic.mp3" type="audio/mpeg">
+</audio>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const audio = document.getElementById("backgroundMusic");
+    audio.volume = 0.3;
+    audio.play().catch(err => {
+      console.log("Autoplay gagal: ", err);
+      document.body.addEventListener("click", function() {
+        audio.play();
+      }, { once: true });
+    });
+
+    const text = "Hi, I’m M. Hafis Afrizal! 🚀\nAspiring IT Professional | Web Developer | Network Enthusiast\nBringing ideas to life with technology and innovation. Let’s build something great together!";
+    const typingText = document.getElementById("typing-text");
+    let index = 0;
+    let isTyping = true;
+
+    function type() {
+      if (isTyping) {
+        if (index < text.length) {
+          typingText.textContent += text[index];
+          index++;
+          setTimeout(type, 50);
+        } else {
+          setTimeout(() => {
+            isTyping = false;
+            erase();
+          }, 2000);
+        }
+      }
+    }
+
+  });
+</script>
+
+<script>
+  function startGame() {
+      alert("Permainan dimulai!");
+      // Tambahkan logika permainan Anda di sini
+  }
+</script>
+
+</body>
+</html>
